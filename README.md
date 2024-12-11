@@ -1,8 +1,18 @@
 # scraper
 
 Price Tracker Application Flutter
-
 This app helps users keep track of product prices and notifies them when their desired price is reached. It uses Firebase for storing data, a Python script for checking prices, and Flutter for the user interface.
+
+## App Screenshots
+
+### Add Products Screen
+![Add Products](screenshots/addproducts.png)
+
+### Price Monitoring Example
+![Price Monitoring](screenshots/particular_page.png)
+
+### Notification Example
+![Notification](screenshots/notification_page.png)
 
 Features
 1. Add Products
