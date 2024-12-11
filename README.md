@@ -1,16 +1,34 @@
 # scraper
 
-A new Flutter project.
+Price Tracker Application Flutter
 
-## Getting Started
+This app helps users keep track of product prices and notifies them when their desired price is reached. It uses Firebase for storing data, a Python script for checking prices, and Flutter for the user interface.
 
-This project is a starting point for a Flutter application.
+Features
+1. Add Products
+Users can add product details, including:
+  URL of the product
+  Target price
+  Model number
+  All details are securely stored in Firebase Firestore.
 
-A few resources to get you started if this is your first Flutter project:
+2. Automated Price Monitoring
+A Python script, deployed on a dedicated server, runs hourly around the clock.
+  It retrieves product details from Firestore.
+  Scrapes the latest prices from the provided URLs.
+  Updates Firestore with the current product prices.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+4. Smart Price Comparison
+The system compares the actual price of the product with the user’s target price.
+  If the current price matches or falls below the target price, a notification is triggered.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+6. Instant Notifications
+The application integrates Firebase Cloud Messaging (FCM) for real-time notifications.
+  When the app initializes, it retrieves the user’s FCM token and stores it in Firestore.
+  The Python script uses the token to send push notifications via Firebase Messaging, alerting users when their desired price is reached.
+
+Technology Stack
+  Frontend: Flutter
+  Backend: Firebase Firestore, Firebase Messaging
+  Automation: Python for web scraping and server-side operations
+  Deployment: Hosted on a personal server
