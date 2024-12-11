@@ -14,6 +14,15 @@ This app helps users keep track of product prices and notifies them when their d
 ### Notification Example
 ![Notification](screenshots/notification_page.png)
 
+### Windows Homepage Example
+![Notification](screenshots/windows_homepage.png)
+
+### Andriod Intro Example
+![Notification](screenshots/intro.png)
+
+### Update Price Example
+![Notification](screenshots/update_price.png)
+
 Features
 1. Add Products
 Users can add product details, including:
